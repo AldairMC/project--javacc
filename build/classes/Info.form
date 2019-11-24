@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel2" alignment="0" pref="514" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel2" alignment="0" pref="333" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;strong&gt;El usuario tiene las siguientes caracter&#xed;sticas&lt;/strong&gt;&lt;br&gt; a) Est&#xe1; compuesto por letras min&#xfa;sculas, d&#xed;gitos, guion bajo (_) y punto (.).&lt;br&gt;b) Empieza en letra o d&#xed;gito. c) Los puntos no pueden ir seguidos.&lt;br&gt; d) Los guiones bajos pueden ir seguidos solo al final as&#xed;:&lt;br&gt; maria_t_mx_r_ _ (correcto).&lt;br&gt;1_ _maria_ t_ _perez (incorrecto).&lt;br&gt;&lt;br&gt; &lt;strong&gt;Los subdominios pueden ser varios de m&#xe1;s bajo nivel a m&#xe1;s alto nivel.&lt;/strong&gt;&lt;br&gt; a) Los subdominios van separados por punto.&lt;br&gt; b) Cada subdominio est&#xe1; formado solo por letras min&#xfa;sculas y /o d&#xed;gitos.&lt;br&gt; c) El &#xfa;ltimo subdominio el de m&#xe1;s alto nivel tiene longitud m&#xe1;xima de 2 caracteres; los dem&#xe1;s subdominios tienen longitud m&#xed;nima de 2. &#xa;&lt;br&gt;&lt;br&gt;&lt;br&gt;&#xa;La direcci&#xf3;n de correo debe contener al menos el usuario, un subdominio de bajo nivel y uno de alto nivel, si el usuario no termina en guion bajo. En caso de que el usuario termine en guion bajo debe tener un solo dominio ya sea un subdominio de bajo nivel o uno de alto nivel.&#xa;&lt;/html&gt; "/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="20" y="20" width="480" height="290"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

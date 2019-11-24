@@ -36,6 +36,8 @@ public class Main extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtResult = new javax.swing.JTextArea();
+        cmdReset = new javax.swing.JButton();
+        cmdInfo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,7 +69,23 @@ public class Main extends javax.swing.JFrame {
 
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 360, 110));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 380, 140));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 380, 140));
+
+        cmdReset.setText("Reset");
+        cmdReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdResetActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cmdReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 110, 30));
+
+        cmdInfo.setText("Instrucciones");
+        cmdInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdInfoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cmdInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 110, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -77,7 +95,7 @@ public class Main extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE)
         );
 
         pack();
@@ -88,6 +106,19 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         analize();
     }//GEN-LAST:event_txtInputKeyReleased
+
+    private void cmdResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdResetActionPerformed
+        // TODO add your handling code here:
+        txtInput.setText("");
+        txtResult.setText("");
+        txtInput.requestFocusInWindow();
+    }//GEN-LAST:event_cmdResetActionPerformed
+
+    private void cmdInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdInfoActionPerformed
+        // TODO add your handling code here:
+        Info info = new Info(this, true);
+        info.setVisible(true);
+    }//GEN-LAST:event_cmdInfoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,6 +173,8 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdInfo;
+    private javax.swing.JButton cmdReset;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
